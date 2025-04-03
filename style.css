@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #000000, #434343);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+p {
+  font-size: 1.3rem;
+  margin: 20px 0;
+  opacity: 0.8;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.loader div {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-top: 5px solid #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.hidden {
+  display: none;
+}
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  display: none;
+}
+.intro {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.name {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1abc9c;
+}
+.role {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.message {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  opacity: 0.8;
+}
+#countdown {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+}
+.stay-tuned {
+  color: #1abc9ccf;
+}
+.social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  /* margin: 0 15px; */
+  font-size: 1.5rem;
+  transition: color 0.3s, transform 0.3s;
+}
+.social-links a:hover {
+  color: #1abc9c;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    margin: 20px;
+  }
+  .intro {
+    font-size: 1.8rem;
+  }
+  .name {
+    font-size: 2.5rem;
+  }
+  .role {
+    font-size: 1.5rem;
+  }
+  .message {
+    font-size: 1.2rem;
+  }
+  #countdown {
+    font-size: 2rem;
+    padding: 8px 15px;
+    margin-bottom: 25px;
+  }
+  .social-links a {
+    font-size: 1.2rem;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+    margin: 15px;
+  }
+  .intro {
+    font-size: 1.5rem;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .role {
+    font-size: 1.3rem;
+  }
+  .message {
+    font-size: 1rem;
+  }
+  #countdown {
+    font-size: 1.5rem;
+    padding: 6px 12px;
+    margin-bottom: 25px;
+  }
+  .social-links a {
+    font-size: 1rem;
+    margin: 0 8px;
+  }
+}
